@@ -53,17 +53,6 @@ flowchart TB
 | [Fons4AI](https://github.com/nauyiq/fons4ai) | Java AI 应用基础框架，组织 Agent 运行、人工确认、执行观测与文档处理能力 | [系统架构](https://github.com/nauyiq/fons4ai/blob/master/docs/architecture.md) |
 | [Fons4Cloud](https://github.com/nauyiq/fons4cloud) | Java 微服务基础框架，提供认证、网关、消息、公共组件与治理控制台 | [系统架构](https://github.com/nauyiq/fons4cloud/blob/master/docs/architecture.md) |
 
-## 技术设计
-
-我关注的不只是模型能否返回答案，也包括执行过程能否被管理、解释和验证。
-
-| 设计问题 | 关注点 | 阅读入口 |
-| --- | --- | --- |
-| 一次 Agent 执行如何管理？ | 运行协议、状态、取消、人工确认与恢复 | [Agent 运行时](https://github.com/nauyiq/fons4ai/blob/master/docs/agent-runtime.md) |
-| 模型与工具调用如何追踪？ | 业务身份、上下文传播、原生 Span 复用、JSONL 与 Langfuse 输出 | [可观测性设计](https://github.com/nauyiq/fons4ai/blob/master/docs/observability.md) |
-| 不同解析器如何保留文档来源？ | 统一文档模型、解析器选择与分块校验 | [文档处理设计](https://github.com/nauyiq/fons4ai/blob/master/docs/document-processing.md) |
-| 一次配置发布如何确认完成？ | 草稿校验、基线检查、目标回读、快照与执行状态 | [治理控制台设计](https://github.com/nauyiq/fons4cloud/blob/master/docs/governance.md) |
-| 不同消息中间件如何统一接入？ | 公共消息协议、适配差异与本地事务消息边界 | [消息设计](https://github.com/nauyiq/fons4cloud/blob/master/docs/messaging.md) |
 
 ## 技术方向
 
